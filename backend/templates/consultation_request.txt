@@ -1,0 +1,17 @@
+New Consultation Request
+
+Full Name: {{ instance.full_name }}
+Email: {{ instance.email }}
+Phone Number: {{ instance.phone_number }}
+Preferred Method of Contact: {{ instance.get_preferred_contact_display }}
+Consultation For: {{ instance.get_consultation_for_display }}
+Type of Care Needed: {{ instance.type_of_care|default:"Not specified" }}
+
+Brief Description:
+{{ instance.description|default:"No description provided." }}
+
+Preferred Consultation Date & Time: {{ instance.preferred_datetime|date:"F j, Y, g:i a" }}
+How Did You Hear About Us: {{ instance.get_how_did_you_hear_display|default:"Not specified" }}
+
+---
+This message was automatically generated from the Consultation Request Form.

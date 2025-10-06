@@ -1,0 +1,19 @@
+New Job Application
+
+Full Name: {{ instance.full_name }}
+Email: {{ instance.email }}
+Phone Number: {{ instance.phone_number }}
+Position Applied For: {{ instance.role_applied_for }}
+Preferred Location: {{ instance.preferred_location }}
+Has Experience: {{ instance.has_experience }}
+Experience Summary: {{ instance.experience_summary }}
+Certifications: {{ instance.certifications }}
+Availability: {{ instance.availability }}
+Eligible to Work: {{ instance.eligible_to_work }}
+Start Date: {{ instance.start_date }}
+Additional Info: {{ instance.additional_info }}
+
+CV / Resume: {{ instance.cv_resume.url }}
+
+---
+This message was automatically generated from the Job Application Form.

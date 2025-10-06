@@ -1,0 +1,17 @@
+New Contact Us Message
+
+Full Name: {{ instance.full_name }}
+Email: {{ instance.email }}
+Phone Number: {{ instance.phone_number }}
+Best Time to Call: {{ instance.best_time_to_call }}
+Town/City: {{ instance.town_city }}
+Postcode: {{ instance.postcode }}
+Care For: {{ instance.get_care_for_display }}
+How Did You Hear About Us: {{ instance.how_did_you_hear_about_us|default:"Not specified" }}
+
+Message Subject: {{ instance.message_subject|default:"No subject" }}
+Message:
+{{ instance.message|default:"No message provided." }}
+
+---
+This message was automatically generated from the Contact Us form.

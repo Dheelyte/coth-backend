@@ -1,0 +1,33 @@
+<body style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
+  <h2 style="color: #0a9396;">New Consultation Request</h2>
+
+  <p><strong>Full Name:</strong> {{ instance.full_name }}</p>
+  <p><strong>Email:</strong> {{ instance.email }}</p>
+  <p><strong>Phone Number:</strong> {{ instance.phone_number }}</p>
+
+  <p><strong>Preferred Method of Contact:</strong> {{ instance.get_preferred_contact_display }}</p>
+  <p><strong>Consultation For:</strong> {{ instance.get_consultation_for_display }}</p>
+  <p><strong>Type of Care Needed:</strong> {{ instance.type_of_care|default:"Not specified" }}</p>
+
+  <p><strong>Brief Description:</strong><br>
+    {{ instance.description|linebreaksbr|default:"No description provided." }}
+  </p>
+
+  <p><strong>Preferred Consultation Date & Time:</strong>
+    {{ instance.preferred_datetime|date:"F j, Y, g:i a" }}
+  </p>
+
+  <p><strong>How Did You Hear About Us:</strong> {{ instance.get_how_did_you_hear_display|default:"Not specified" }}</p>
+
+  <hr style="border: none; border-top: 1px solid #ccc; margin-top: 20px;" />
+  <p>
+    <a href="{{ admin_url }}" style="color: #0077b6; text-decoration: none;">
+    🔗 View all consultation records
+    </a>
+    </p>
+    <hr style="border: none; border-top: 1px solid #ccc;" />
+
+  <p style="font-size: 0.9em; color: #666;">
+    This message was automatically generated from the Consultation Request Form.
+  </p>
+</body>

@@ -1,0 +1,29 @@
+<body style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
+    <h2 style="color: #0a9396;">New Job Application</h2>
+    <p><strong>Full Name:</strong> {{ instance.full_name }}</p>
+    <p><strong>Email:</strong> {{ instance.email }}</p>
+    <p><strong>Phone Number:</strong> {{ instance.phone_number }}</p>
+    <p><strong>Position Applied For:</strong> {{ instance.role_applied_for }}</p>
+    <p><strong>Preferred Location:</strong> {{ instance.preferred_location }}</p>
+    <p><strong>Has Experience:</strong> {{ instance.has_experience }}</p>
+    <p><strong>Experience Summary:</strong> {{ instance.experience_summary }}</p>
+    <p><strong>Certifications:</strong> {{ instance.experience_summary }}</p>
+    <p><strong>Availability:</strong> {{ instance.experience_summary }}</p>
+    <p><strong>Eligible to work:</strong> {{ instance.eligible_to_work }}</p>
+    <p><strong>Start Date:</strong> {{ instance.start_date }}</p>
+    <p><strong>Additional Info:</strong> {{ instance.additional_info }}</p>
+
+    <p><strong>CV / Resume:</strong>
+      <a href="{{ instance.cv_resume.url }}" style="color: #0077b6;">Download Resume</a>
+    </p>
+
+    <hr style="border: none; border-top: 1px solid #ccc;" />
+    <p>
+        <a href="{{ admin_url }}" style="color: #0077b6; text-decoration: none;">
+        🔗 View all job application records
+        </a>
+    </p>
+    <hr style="border: none; border-top: 1px solid #ccc;" />
+
+    <p style="font-size: 0.9em; color: #666;">This message was automatically generated from the Job Application Form.</p>
+</body>
