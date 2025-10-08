@@ -28,9 +28,9 @@ load_dotenv(dotenv_path=BASE_DIR / ".env")
 SECRET_KEY = 'django-insecure-g$o01see^=^26j$87i6$s99=%jnn@4&tbdg*ap7+o#59fi=z7^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['coth-backend.onrender.com']
 
 
 # Application definition
