@@ -9,6 +9,7 @@ dj-database-url==3.0.1
 Django==5.2.6
 django-ckeditor==6.7.3
 django-cloudinary-storage==0.3.0
+django-cors-headers==4.9.0
 django-js-asset==3.1.2
 djangorestframework==3.16.1
 drf-spectacular==0.28.0
